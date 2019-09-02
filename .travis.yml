@@ -31,8 +31,8 @@ before_script:
   - export PATH=$GRADLE_HOME/bin:$PATH
   - git clone https://github.com/flutter/flutter.git -b alpha --depth 1
 script:
-  - flutter packages get
-  - flutter test --no-pub
+  - ./flutter/bin/flutter packages get
+  - ./flutter/bin/flutter  test --no-pub
   - ./flutter/bin/flutter -v build apk --debug
 
 cache:
