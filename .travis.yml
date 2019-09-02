@@ -25,3 +25,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: MatyiFKBT/portfolio_app
+    tags: true
