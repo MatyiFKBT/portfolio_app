@@ -12,7 +12,8 @@ install:
 script:
   - flutter packages get
   - flutter analyze --no-pub --no-current-package lib/ test/
-  - flutter test --no-pub test/
+  - flutter test --no-pu
+  - flutter build apk --debug
 cache:
   directories:
     - "$HOME/.pub-cache"
