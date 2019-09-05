@@ -41,7 +41,7 @@ script:
 
 before_deploy:
   # Set up git user name and tag this commit
-  - flutter build apk --debug
+  - flutter build apk
   - git config --local user.name "MatyiFKBT"
   - git config --local user.email "mmatyi1999@gmail.com"
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
